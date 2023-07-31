@@ -66,11 +66,8 @@ class MainActivity : ComponentActivity() {
                 //MARK: Image
                 Image(
                     painter = painterResource(
-                        id = if (emailLength == 200) {
-                            R.drawable.shy
-                        }
-                        else if (emailLength <= 0) {
-                            R.drawable.neutral
+                        id = if (emailLength <= 0) {
+                             R.drawable.shy
                         }
                         else if (emailLength == 1) {
                             R.drawable.frame_1
